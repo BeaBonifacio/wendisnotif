@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WENDiS - Weather Notification System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>WENDiS</h1>
+    <p>Weather Emergency Notification Display System</p>
+
+    <!-- Search Weather -->
+    <div class="weather-search">
+      <input type="text" id="city" placeholder="Enter city name">
+      <button onclick="getWeather()">Get Weather</button>
+    </div>
+
+    <!-- Display Weather -->
+    <div id="weather-display">
+      <div id="weather-status"></div>
+    </div>
+
+    <!-- Notifications -->
+    <div class="notifications">
+      <h3>Daily Notifications</h3>
+      <form id="notification-form">
+        <input type="text" id="user-phone" placeholder="Enter your phone number" required>
+        <button type="submit">Subscribe to Weather Updates</button>
+      </form>
+      <div id="notification-status"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
